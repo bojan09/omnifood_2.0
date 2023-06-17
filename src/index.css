@@ -84,3 +84,32 @@ select {
   filter: brightness(0);
   opacity: 50%;
 }
+
+/* Slider Animation */
+.slider {
+  animation: scroll 10s linear infinite;
+  width: 50vw;
+}
+
+.slider-item {
+  transition: all .3s ease-in-out;
+  padding: 4px 8px;
+  margin-inline: 2px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@keyframes scroll {
+  0% {
+    transform-origin: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(50%);
+  }
+}
