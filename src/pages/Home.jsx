@@ -2,11 +2,44 @@ import React from "react";
 
 // assets
 import home_img from "../assets/bowls.jpg";
+import customer_1 from "../assets/customers/customer-1.jpg";
+import customer_2 from "../assets/customers/customer-2.jpg";
+import customer_3 from "../assets/customers/customer-3.jpg";
+import customer_4 from "../assets/customers/customer-4.jpg";
+import customer_5 from "../assets/customers/customer-5.jpg";
+import customer_6 from "../assets/customers/customer-6.jpg";
 
 // components
 import Slider from "../components/Slider";
 
 const Home = () => {
+  const customers = [
+    {
+      id: 1,
+      img: customer_1,
+    },
+    {
+      id: 2,
+      img: customer_2,
+    },
+    {
+      id: 3,
+      img: customer_3,
+    },
+    {
+      id: 4,
+      img: customer_4,
+    },
+    {
+      id: 5,
+      img: customer_5,
+    },
+    {
+      id: 6,
+      img: customer_6,
+    },
+  ];
+
   return (
     <div className="w-[80vw] md:w-[90vw] mx-auto md:flex justify-center gap-3">
       {/* Left Container */}
@@ -42,6 +75,16 @@ const Home = () => {
               Get Started
             </a>
           </button>
+        </div>
+
+        <div className="flex mt-[4rem]">
+          {customers.map((customer) => (
+            <img
+              src={customer.img}
+              alt="customer"
+              className="rounded-full border-[6px] border-primaryBackground md:w-[80px] xs:w-[60px] ml-[-1.5rem] first:ml-0 scale-100 hover:scale-110 transition-all duration-200 ease-in-out hover:z-10"
+            />
+          ))}
         </div>
       </div>
 
