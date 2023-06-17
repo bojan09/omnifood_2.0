@@ -2,7 +2,7 @@ import React from "react";
 
 const Slider = () => {
   return (
-    <div className="lg:w-[39vw] md:w-[53vw] xs:w-[80vw]">
+    <div className="lg:w-[33vw] md:w-[53vw] xs:w-[80vw]">
       <div class="scroll-parent ">
         <div class="scroll-element primary ">
           <p className="px-2 py-[2px]  xs:mx-2 md:m-0 text-sm rounded-full bg-green-200">

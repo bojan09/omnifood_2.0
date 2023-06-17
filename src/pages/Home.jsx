@@ -8,9 +8,9 @@ import Slider from "../components/Slider";
 
 const Home = () => {
   return (
-    <div className="w-[80vw] md:w-[90vw] mx-auto md:flex">
+    <div className="w-[80vw] md:w-[90vw] mx-auto md:flex justify-center gap-3">
       {/* Left Container */}
-      <div>
+      <div className="lg:w-[40%]">
         <h1 className="text-4xl font-medium my-6">
           A healthy meal delivered to your door, <b>every single day</b>{" "}
         </h1>
@@ -50,7 +50,7 @@ const Home = () => {
         <img
           src={home_img}
           alt="home_img"
-          className="rounded-lg shadow-lg mb-[3rem]"
+          className="rounded-lg shadow-lg mb-[3rem] lg:w-[70%]"
         />
       </div>
     </div>
