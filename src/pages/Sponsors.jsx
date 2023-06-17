@@ -36,13 +36,13 @@ const Sponsors = () => {
         As featured in
       </h1>
 
-      <div className="flex items-center justify-center gap-[3rem]">
+      <div className="md:w-[80vw] mx-auto flex items-center justify-center md:gap-[3rem] border-b-[1px] pb-6 mx-2">
         {sponsors.map((sponsor) => (
           <img
             key={sponsor.id}
             src={sponsor.sponsor}
             alt="sponsor"
-            className="w-[18%] md:w-[12%] h-full px-2 sponsors_img_filter"
+            className="xs:w-[18%] md:w-[12%] h-full px-2 sponsors_img_filter"
           />
         ))}
       </div>
