@@ -14,8 +14,8 @@ const Home = () => {
           healthy again. Tailored to your personal tastes and nutritional needs.
         </p>
         {/*
-    <Slider />
-  */}
+         */}
+        <Slider />
         <div>
           <button>
             <a href="#howItWorks">Learn more</a>
