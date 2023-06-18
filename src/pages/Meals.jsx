@@ -88,14 +88,12 @@ const Meals = () => {
         </h1>
       </div>
 
-      <div
-        className="flex flex-wrap gap-[2rem] md:w-[80vw] xs:w-[75vw] mx-auto mt-[5rem]"
-        data-aos="fade-right"
-      >
+      <div className="flex flex-wrap gap-[2rem] md:w-[80vw] xs:w-[75vw] mx-auto mt-[5rem]">
         {mealContainer.map((meal) => (
           <div
             key={meal.id}
             className="w-[350px] shadow-xl rounded-b-xl bg-gradient-to-br from-tertiaryBackground to-white scale-100 hover:scale-105 transition-all duration-200 ease-in-out my-[1rem]"
+            data-aos="fade-right"
           >
             {/* Meal Image */}
             <img src={meal.img} alt="meal_img" className="rounded-t-xl " />
