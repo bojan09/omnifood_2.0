@@ -131,7 +131,7 @@ const Testimonials = () => {
       id="testimonials"
       className="pt-[2rem] pb-[5rem] bg-secondaryBackground md:flex flex-row-reverse items-center"
     >
-      <div className="xs:pl-8 lg:pl-[7rem] flex-1">
+      <div className="w-[85vw] mx-auto lg:pl-[7rem] flex-1">
         <h2 className="text-primaryColor md:text-xl uppercase mt-[2rem]">
           TESTIMONIALS
         </h2>
@@ -143,10 +143,10 @@ const Testimonials = () => {
         <div className="lg:w-[50vw] md:flex flex-wrap gap-6">
           {people.map((person) => (
             <div
-              className="bg-primaryBackground px-6 py-2 rounded-lg"
+              className="bg-primaryBackground px-6 py-2 rounded-lg xs:my-4 md:m-0"
               key={person.id}
             >
-              <p className="w-[86vw] lg:text-lg text-[15px] pt-4 font-light text-gray-600 md:w-[20vw]">
+              <p className="lg:text-lg text-[15px] pt-4 font-light text-gray-600 md:w-[20vw]">
                 {person.description}
               </p>
 
