@@ -133,6 +133,11 @@ const Pricing = () => {
           </button>
         </div>
       </div>
+
+      <h1 className="text-sm font-light text-center mb-[3rem]">
+        Prices include all applicable taxes. You can cancel at any time. Both
+        plans include the following:
+      </h1>
     </div>
   );
 };
