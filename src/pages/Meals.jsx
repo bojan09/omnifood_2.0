@@ -78,7 +78,7 @@ const Meals = () => {
       {/* Secondary & Primary Heading */}
       <div className="md:w-[70vw] mx-auto">
         <h2 className="uppercase text-primaryColor xs:text-lg md:text-2xl px-[2rem] pb-[1rem] text-center">
-          CUSTOM MEALS
+          MEALS
         </h2>
 
         <h1 className=" pl-[2rem] pr-[3rem] font-semibold lg:text-6xl md:text-[2.5rem]  md:mb-[9rem] md:mt-[2rem] text-center text-4xl">
