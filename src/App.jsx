@@ -10,6 +10,7 @@ import {
   HowItWorks,
   About,
   Testimonials,
+  Meals,
   Pricing,
   Contact,
 } from "./pages";
@@ -21,6 +22,7 @@ const App = () => {
       <Home />
       <Sponsors />
       <HowItWorks />
+      <Meals />
       <Testimonials />
       <Pricing />
       <About />

@@ -174,3 +174,7 @@ select {
   background-color: hsl(5, 82%, 88%);
   z-index: -1;
 }
+
+.bg {
+  color: hsl(124, 100%, 95%);
+}

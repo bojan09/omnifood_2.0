@@ -12,6 +12,7 @@ module.exports = {
         secondaryColor: "#29bf12",
         primaryBackground: "#b7efc5",
         secondaryBackground: "#f0fff1",
+        tertiaryBackground: "hsl(124, 100%, 99%)",
         darkColor: "#513b56",
         shadeColor: "#60d394",
         greenDarkColor: "#51cf66",

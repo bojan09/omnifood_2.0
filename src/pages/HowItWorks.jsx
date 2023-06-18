@@ -11,7 +11,7 @@ const HowItWorks = () => {
       id="howItWorks"
       className="max-w-[1200px] mx-auto lg:mt-[5rem] mt-[2rem] mb-[5rem]"
     >
-      <h2 className="uppercase text-primaryColor text-lg pl-[2rem] pb-[1rem]">
+      <h2 className="uppercase text-primaryColor xs:text-lg md:text-2xl md:pl-[5rem] xs:pl-[2.5rem] pb-[1rem]">
         How it works
       </h2>
 
