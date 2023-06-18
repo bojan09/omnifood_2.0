@@ -71,7 +71,10 @@ const Meals = () => {
   ];
 
   return (
-    <div className="md:w-[80vw] mx-auto mt-[10rem] xs:mt-[8rem] mb-[5rem]">
+    <div
+      id="meals"
+      className="md:w-[80vw] mx-auto mt-[10rem] xs:mt-[8rem] mb-[5rem]"
+    >
       {/* Secondary & Primary Heading */}
       <div className="md:w-[70vw] mx-auto">
         <h2 className="uppercase text-primaryColor xs:text-lg md:text-2xl px-[2rem] pb-[1rem] text-center">
