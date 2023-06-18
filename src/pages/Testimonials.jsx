@@ -1,5 +1,14 @@
 import React from "react";
 
+// animate on screen library
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 1000,
+  offset: 100,
+});
+
 // assets
 import star from "../assets/star.png";
 
@@ -140,7 +149,7 @@ const Testimonials = () => {
         </h1>
 
         {/* People Testimonials */}
-        <div className="lg:w-[50vw] md:flex flex-wrap gap-6">
+        <div className="lg:w-[50vw] md:flex flex-wrap gap-6" data-aos="fade-up">
           {people.map((person) => (
             <div
               className="bg-primaryBackground px-6 py-2 rounded-lg xs:my-4 md:m-0"
@@ -175,7 +184,10 @@ const Testimonials = () => {
         </div>
       </div>
       {/* Gallery Testimonials */}
-      <div className="flex-1 mt-[3rem] flex flex-row flex-wrap justify-center items-center gap-4">
+      <div
+        className="flex-1 mt-[3rem] flex flex-row flex-wrap justify-center items-center gap-4"
+        data-aos="fade-down"
+      >
         {imageGallery.map((image) => (
           <div
             key={image.id}
