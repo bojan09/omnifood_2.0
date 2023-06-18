@@ -31,12 +31,12 @@ const Sponsors = () => {
     },
   ];
   return (
-    <div id="sponsors" className="pt-[2rem] pb-[3rem]">
+    <div id="sponsors" className="pt-[2rem] pb-[3rem] ">
       <h1 className="uppercase text-slate-400 text-center md:py-[3.5rem] pb-5 md:text-3xl">
         As featured in
       </h1>
 
-      <div className="md:w-[80vw] mx-auto flex items-center justify-center md:gap-[3rem] border-b-[1px] pb-6 ">
+      <div className="w-[80vw] mx-auto flex items-center justify-center md:gap-[3rem] border-b-[1px] pt-2 pb-6 ">
         {sponsors.map((sponsor) => (
           <img
             key={sponsor.id}

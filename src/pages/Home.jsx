@@ -77,7 +77,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="flex mt-[4rem]">
+        <div className="flex items-center xs:justify-center md:justify-normal mt-[4rem]">
           {customers.map((customer) => (
             <img
               src={customer.img}
