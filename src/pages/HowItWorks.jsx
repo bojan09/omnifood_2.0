@@ -17,7 +17,10 @@ const HowItWorks = () => {
 
       <h1 className="pl-[2rem] pr-[3rem] font-semibold lg:text-6xl md:text-[2.5rem]  md:mb-[9rem] md:mt-[2rem] text-center text-4xl">
         Your daily dose of health in
-        <span className="text-primaryColor">3 simple steps</span>
+        <span className="text-primaryColor">
+          {" "}
+          <i>3 simple steps</i>
+        </span>
       </h1>
 
       {/* Main container -- 1*/}
@@ -64,7 +67,7 @@ const HowItWorks = () => {
           <p className="text-[5rem] font-semibold text-shadeColor">02</p>
           {/* Heading secondary */}
           <h2 className="my-3 text-[19px] md:text-2xl font-semibold">
-            Approve your weekly meal plan
+            Approve your <i>weekly meal plan</i>
           </h2>
           <p className="xs:font-thin md:font-normal md:text-lg">
             Once per week, approve the meal plan generated for you by Omnifood
@@ -82,7 +85,7 @@ const HowItWorks = () => {
           <p className="text-[5rem] font-semibold text-shadeColor">03</p>
           {/* Heading secondary */}
           <h2 className="my-3 text-[19px] md:text-2xl font-semibold">
-            Receive meals at convenient time
+            Receive <i>meals</i> at <i>convenient time</i>
           </h2>
           <p className="xs:font-thin md:font-normal md:text-lg">
             Best chefs in town will cook your selected meal every day, and we
