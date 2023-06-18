@@ -1,6 +1,7 @@
 import React from "react";
 
 // assets
+import star from "../assets/star.png";
 
 // people
 import person_1 from "../assets/customers/dave.jpg";
@@ -29,6 +30,8 @@ const Testimonials = () => {
       description:
         "Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.",
       name: "Dave Bryson",
+      location: "New York",
+      rating: star,
     },
 
     {
@@ -37,6 +40,8 @@ const Testimonials = () => {
       description:
         "The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore!",
       name: "Ben Hadley",
+      location: "Gettysburg, PA,",
+      rating: star,
     },
 
     {
@@ -45,6 +50,8 @@ const Testimonials = () => {
       description:
         "Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now!",
       name: "Steve Miller",
+      location: "Los Angeles, CA",
+      rating: star,
     },
 
     {
@@ -53,6 +60,8 @@ const Testimonials = () => {
       description:
         "I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic.",
       name: "Hannah Smith",
+      location: "Raleigh, NC",
+      rating: star,
     },
   ];
 
@@ -120,7 +129,7 @@ const Testimonials = () => {
   return (
     <div
       id="testimonials"
-      className="pt-[2rem] pb-[5rem] bg-primaryBackground md:flex items-center"
+      className="pt-[2rem] pb-[5rem] bg-secondaryBackground md:flex flex-row-reverse items-center"
     >
       <div className="xs:pl-8 lg:pl-[7rem] flex-1">
         <h2 className="text-primaryColor md:text-xl uppercase mt-[2rem]">
@@ -131,21 +140,36 @@ const Testimonials = () => {
         </h1>
 
         {/* People Testimonials */}
-        <div className="lg:w-[50vw] md:flex flex-wrap gap-[4rem]">
+        <div className="lg:w-[50vw] md:flex flex-wrap gap-6">
           {people.map((person) => (
-            <div key={person.id}>
-              <img
-                src={person.img}
-                alt="person.img"
-                className="w-[50px] lg:w-[70px] rounded-full mt-[2rem] "
-              />
-              <p className="w-[86vw] lg:text-lg text-[15px] py-4 font-light text-gray-600 md:w-[20vw]">
+            <div
+              className="bg-primaryBackground px-6 py-2 rounded-lg"
+              key={person.id}
+            >
+              <p className="w-[86vw] lg:text-lg text-[15px] pt-4 font-light text-gray-600 md:w-[20vw]">
                 {person.description}
               </p>
-              <p className="py-3 text-gray-600">
-                <span className="text-gray-500">— </span>
-                {person.name}
-              </p>
+
+              {/* Person rating & 
+            Location */}
+              <div className="flex justify-center items-center py-2">
+                <img
+                  src={person.img}
+                  alt="person.img"
+                  className="w-[50px] lg:w-[70px] rounded-full mt-[2rem] "
+                />
+                <div className="ml-8 mt-6 ">
+                  <p>{person.name}</p>
+                  <p>{person.location}</p>
+
+                  <div className="flex gap-2">
+                    <img src={person.rating} alt="rating" />
+                    <img src={person.rating} alt="rating" />
+                    <img src={person.rating} alt="rating" />
+                    <img src={person.rating} alt="rating" />
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>
