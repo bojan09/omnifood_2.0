@@ -1,5 +1,14 @@
 import React from "react";
 
+// animate on screen library
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 1000,
+  offset: 100,
+});
+
 // assets
 import phone_step_01 from "../assets/app/app-1.png";
 import phone_step_02 from "../assets/app/app-2.png";
@@ -46,6 +55,7 @@ const HowItWorks = () => {
             src={phone_step_01}
             alt="phone_step"
             className="w-[35%] md:w-[200px]"
+            data-aos="fade-up"
           />
         </div>
       </div>
@@ -58,6 +68,7 @@ const HowItWorks = () => {
             src={phone_step_02}
             alt="phone_step"
             className="w-[35%] md:w-[200px]"
+            data-aos="fade-up"
           />
         </div>
 
@@ -99,6 +110,7 @@ const HowItWorks = () => {
             src={phone_step_03}
             alt="phone_step"
             className="w-[35%] md:w-[200px]"
+            data-aos="fade-up"
           />
         </div>
       </div>

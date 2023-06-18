@@ -1,5 +1,14 @@
 import React from "react";
 
+// animate on screen library
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 1000,
+  offset: 100,
+});
+
 // assets
 import meal_1 from "../assets/meals/meal-1.jpg";
 import meal_2 from "../assets/meals/meal-2.jpg";
@@ -76,7 +85,10 @@ const Meals = () => {
         </h1>
       </div>
 
-      <div className="flex flex-wrap gap-[2rem] md:w-[80vw] xs:w-[75vw] mx-auto mt-[5rem]">
+      <div
+        className="flex flex-wrap gap-[2rem] md:w-[80vw] xs:w-[75vw] mx-auto mt-[5rem]"
+        data-aos="fade-right"
+      >
         {mealContainer.map((meal) => (
           <div
             key={meal.id}
